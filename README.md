@@ -1,5 +1,4 @@
 # HLK-LD2450 Real-Time Radar Web UI
-
 This project turns a HLK-LD2450 mmWave radar sensor into a small live tracking system running on an ESP32 board. The radar sends target data over UART, the ESP32 parses it, and the result is shown in a browser-based radar display over Wi-Fi.
 
 It also includes a red-zone alert mode, a live WebSocket stream, and a small RGB LED that shows whether a target is currently active.
@@ -8,7 +7,7 @@ It also includes a red-zone alert mode, a live WebSocket stream, and a small RGB
 
 The system works like this:
 
-1. The HLK-LD2450 radar scans the area and reports up to three tracked targets.
+1. The [HLK-LD2450](https://amazon.com) radar scans the area and reports up to three tracked targets.
 2. The ESP32 reads the UART packets from the radar.
 3. The firmware decodes target position, speed, distance, and gate information.
 4. The data is sent to a browser over WebSocket.
