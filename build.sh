@@ -1,7 +1,7 @@
 #FQBN="esp32:esp32:esp32s3:CDCOnBoot=cdc,FlashMode=qio,FlashSize=16M,PartitionScheme=app3M_fat9M_16MB,PSRAM=opi,CPUFreq=240,DebugLevel=none,DFUOnBoot=default,EraseFlash=none,EventsCore=1,JTAGAdapter=default,LoopCore=1,MSCOnBoot=default,UploadMode=default,UploadSpeed=921600,USBMode=hwcdc,ZigbeeMode=default"
 #FQBN="esp32:esp32:XIAO_ESP32C6:UploadSpeed=921600,CDCOnBoot=cdc,CPUFreq=160,FlashFreq=80,FlashMode=qio,FlashSize=4M,PartitionScheme=default,DebugLevel=none,EraseFlash=none,JTAGAdapter=default,ZigbeeMode=default"
 FQBN="esp32:esp32:esp32c3:UploadSpeed=921600,CDCOnBoot=cdc,CPUFreq=160,FlashFreq=80,FlashMode=qio,FlashSize=4M,PartitionScheme=default,DebugLevel=none,EraseFlash=none,JTAGAdapter=default"  
-arduino-cli compile --fqbn "${FQBN}" /Users/leo/ttkmmwave --build-path ~/build
+arduino-cli compile --fqbn "${FQBN}" ./ttkmmwave.ino --build-path ~/build
 
 if [ $? -eq 0 ]; then
     echo "Detecting connected boards..."
@@ -26,5 +26,5 @@ if [ $? -eq 0 ]; then
     fi
 
     SELECTED_PORT=$(echo "${PORT_LIST[$SELECTED_INDEX]}" | awk '{print $1}')
-    arduino-cli upload -p "${SELECTED_PORT}" --fqbn "${FQBN}" /Users/leo/ttkmouse --input-dir ~/build
+    arduino-cli upload -p "${SELECTED_PORT}" --fqbn "${FQBN}" ./ttkmmwave --input-dir ~/build
 fi
