@@ -20,7 +20,7 @@ The system works like this:
 
 - [HLK-LD2450](https://www.aliexpress.com/item/1005007254785237.html) mmWave radar module
 - [ESP32-C3-Zero](https://www.aliexpress.com/item/1005006524672028.html) compatible board
-- Optional [USB serial](https://www.aliexpress.com/item/1005012360095620.html) connection for programming/monitoring
+- Optional [USB serial](https://www.aliexpress.com/item/1005012360095620.html) connection for playing with the Golang code without the ESP32
 - One WS2812 RGB LED (built into the board for status indication)
 - Wi-Fi network or fallback access point
 
