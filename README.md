@@ -242,17 +242,6 @@ The dashboard should display a radar view and live moving targets.
 - The default code is tuned for a live target display and short-range alerting.
 - Several values are compile-time constants, so you can tune the radar behavior to your installation.
 
-## File layout
-
-```text
-.
-├── ttkmmwave.ino   # Main ESP32 firmware
-├── example.go      # Go-based websocket/serial bridge example
-├── build.sh        # compile + upload helper
-├── monitor.sh      # serial monitor helper
-├── README.md       # Project documentation
-```
-
 ## Example Go bridge
 
 The `example.go` file is a separate Go program that reads serial data from a USB device and serves a browser dashboard over WebSocket. It is a useful reference for how the radar stream is decoded and forwarded to a browser-based UI.
