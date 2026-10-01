@@ -136,7 +136,7 @@ The board’s RGB LED is used as a status indicator:
 
 ### Arduino IDE / Arduino CLI
 
-Open the project in the Arduino IDE or use [arduino-cli](https://docs.arduino.cc/arduino-cli/).
+Open the project in the Arduino IDE or use [arduino-cli](https://docs.arduino.cc/arduino-cli/) with VSCode.
 
 Install these libraries using the library manager:
 
