@@ -38,8 +38,6 @@ The code uses:
 - UART1 RX on GPIO 20
 - UART1 TX on GPIO 21
 
-The top of the file also contains a comment showing a different earlier pin layout (GPIO4 and GPIO5). That appears to be a note from a different board variant, but the active sketch here uses GPIO20 and GPIO21. If you use another ESP32 board or a different pin mapping, adjust the pin constants accordingly.
-
 ## Wiring
 
 The project expects the following connections between the LD2450 and the ESP32:
