@@ -7,7 +7,7 @@ It also includes a red-zone alert mode, a live WebSocket stream, and a small RGB
 
 The system works like this:
 
-1. The [HLK-LD2450](https://amazon.com) radar scans the area and reports up to three tracked targets.
+1. The HLK-LD2450 radar scans the area and reports up to three tracked targets.
 2. The ESP32 reads the UART packets from the radar.
 3. The firmware decodes target position, speed, distance, and gate information.
 4. The data is sent to a browser over WebSocket.
@@ -18,9 +18,9 @@ The system works like this:
 
 ### Main components
 
-- HLK-LD2450 mmWave radar module
-- ESP32-C3 or ESP32-C3-Zero compatible board
-- Optional USB serial connection for programming/monitoring
+- [HLK-LD2450](https://www.aliexpress.com/item/1005007254785237.html) mmWave radar module
+- [ESP32-C3-Zero](https://www.aliexpress.com/item/1005006524672028.html) compatible board
+- Optional [USB serial](https://www.aliexpress.com/item/1005012360095620.html) connection for programming/monitoring
 - One WS2812 RGB LED (built into the board for status indication)
 - Wi-Fi network or fallback access point
 
